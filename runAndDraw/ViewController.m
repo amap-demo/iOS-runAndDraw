@@ -98,6 +98,10 @@
         free(_coordBuffer);
         _coordBuffer = NULL;
     }
+    if(_points != NULL) {
+        free(_points);
+        _points = NULL;
+    }
 }
 
 - (void)initPoints {
